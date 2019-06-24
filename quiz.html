@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>Quiz</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/quiz.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="top-nav-bar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Начало </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pageEarth.html">Планети </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            data-toggle="dropdown"
+                            href="pageAsteroids.html"
+                            role="button"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                            >Малки тела</a
+                        >
+                        <ul class="sub-menu">
+                            <li class="menu-item">
+                                <a href="pageAsteroids.html">Астероиди</a>
+                            </li>
+                            <li class="menu-item"><a href="pageCommets.html">Комети</a></li>
+                            <li class="menu-item">
+                                <a href="pageDwarfPlanets.html">Планети джуджета</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pageNaturalMoon.html">Естествени спътници</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="pageArtificalMoon.html">Изкуствени спътници</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="smallBodiesGallery.html">Галерия</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="listGames.html">Забавления</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pageNews.html">Новини</a>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html"
+                            ><span class="fas fa-sign-in-alt"></span> Вход</a
+                        >
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html"
+                            ><span class="fas fa-user"></span> Регистрация</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------PAGE CONTENT---------------------------->
+
+
+    <div class="container">
+        <div class="shade">
+            <div class="blackboard" style="color:white">
+                <button class="float-right" id="btn_question">
+                    <img src="./vendor/bootstrap/images/help_icon.png" alt="Give a question button">
+                </button>
+
+                <div id="question"></div>
+                <form name="radioAnswers" class="radio_buttons">
+                    <div class="btn">
+                        <input type="radio" name="choice" value="0" id="radio0"><label id="label0"></label></input>
+                    </div>
+                    <div class="btn">
+                        <input type="radio" name="choice" value="1" id="radio1"><label id="label1"></label></input>
+                    </div>
+                    <div class="btn">
+                        <input type="radio" name="choice" value="2" id="radio2"><label id="label2"></label></input>
+                    </div>
+                    <div class="btn">
+                        <input type="radio" name="choice" value="3" id="radio3"><label id="label3"></label></input>
+                    </div>
+                </form>
+                <button id="next" onclick="nextQuestion()">Следващ въпрос</button>
+                <div id="point"></div>
+            </div>
+        </div>
+        <img id="person" src="./vendor/bootstrap/images/person.png" alt="Person" class="right">
+        <!-- Bootstrap core JavaScript -->
+        <script src="./vendor/jquery/jquery.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendor/bootstrap/js/quiz.js"></script>
+    </div>
+</body>
+
+</html>

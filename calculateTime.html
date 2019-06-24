@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="calculateTime.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        />
+        <title>Calculate Time</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="vendor/bootstrap/css/calculateTime.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="top-nav-bar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Начало </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pageEarth.html">Планети </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                data-toggle="dropdown"
+                                href="pageAsteroids.html"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Малки тела</a
+                            >
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="pageAsteroids.html">Астероиди</a>
+                                </li>
+                                <li class="menu-item"><a href="pageCommets.html">Комети</a></li>
+                                <li class="menu-item">
+                                    <a href="pageDwarfPlanets.html">Планети джуджета</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="pageNaturalMoon.html">Естествени спътници</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="pageArtificalMoon.html">Изкуствени спътници</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="smallBodiesGallery.html">Галерия</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="listGames.html">Забавления</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pageNews.html">Новини</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"
+                                ><span class="fas fa-sign-in-alt"></span> Вход</a
+                            >
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html"
+                                ><span class="fas fa-user"></span> Регистрация</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!----------------------PAGE CONTENT---------------------------->
+
+        <div class="container">
+            <section>
+                <h1>Забавлявай се с времето!</h1>
+            </section>
+
+            <section class="block">
+                <section class="planet_buttons">
+                    <h2>Избери планета:</h2>
+                    <section>
+                        <button id="btn1">Меркурий</button>
+                        <button id="btn2">Венера</button>
+                        <button id="btn3">Земя</button>
+                        <button id="btn4">Марс</button>
+                        <button id="btn5">Юпитер</button>
+                        <button id="btn6">Сатурн</button>
+                        <button id="btn7">Уран</button>
+                        <button id="btn8">Нептун</button>
+                        <button id="btn9">Плутон</button>
+                    </section>
+                </section>
+
+                <section class="time">
+                    <h2>Въведи време в минути:</h2>
+                    <section>
+                        <input type="number" id="time_number" placeholder="Време в минути" />
+                        <button class="up" id="check_button">Провери</button>
+                        <button class="down" id="restore_button">Изчисти</button>
+                        <h2 id="write_here"></h2>
+                    </section>
+                </section>
+            </section>
+        </div>
+        <!-- Bootstrap core JavaScript -->
+        <script src="./vendor/jquery/jquery.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendor/bootstrap/js/calculateTime.js"></script>
+    </body>
+</html>

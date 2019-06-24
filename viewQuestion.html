@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Admin panel</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/bootstrap/css/viewQuestion.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="top-nav-bar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexAdmin.html">Начало </a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                            <a class="nav-link" href="pageNews.html">Новини</a>
+                        </li> -->
+                </ul>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="indexAdmin.html"><i class="fa fa-user-astronaut"
+                                aria-hidden="true"></i>
+                            Администратор</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><span class="fa fa-window-close"></span> Изход</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!----------------------PAGE CONTENT---------------------------->
+
+    <div class="container">
+        <div class="shade">
+            <div class="blackboard" style="color:white">
+                <h3>Форма за преглед на въпроси</h3>
+                <div id="labels">
+                    <label for="question_name">
+                        Условие на въпроса:
+                        <span>Коя е най - близката планета до Слънцето?</span>
+                    </label>
+
+                    <label for="true_answer">
+                        Верен отговор на въпроса:
+                        <span>Меркурий</span> 
+                    </label>
+
+                    <label for="false_answer_1">
+                        Първи грешен отговор на въпроса:
+                        <span>Марс</span>
+                    </label>
+
+                    <label for="false_answer_2">
+                        Втори грешен отговор на въпроса:
+                        <span>Земя</span>
+                    </label>
+
+                    <label for="false_answer_3">
+                        Трети грешен отговор на въпроса:
+                        <span>Юпитер</span>
+                    </label>
+
+                    <label for="link">
+                        Линк към източника на въпроса:
+                        <span>www.wikipedia.com</span>
+                    </label>
+
+                </div>
+
+                <input type="button" value="Одобри въпрос" id="add_btn">
+                <input type="button" value="Отхвърли въпрос" id="cancel_btn">
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="./vendor/jquery/jquery.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

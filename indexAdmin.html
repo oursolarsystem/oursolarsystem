@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Admin panel</title>
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" />
+
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="vendor/bootstrap/css/indexAdmin.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="top-nav-bar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="indexAdmin.html">Начало </a>
+                        </li>
+
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="pageNews.html">Новини</a>
+                        </li> -->
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="indexAdmin.html"
+                                ><i class="fa fa-user-astronaut" aria-hidden="true"></i>
+                                Администратор</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"
+                                ><span class="fa fa-window-close"></span> Изход</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!----------------------PAGE CONTENT---------------------------->
+
+        <div class="container">
+            <div class="games_button">
+                <section id="quiz" class="sec_size float-left">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/quiz_1.png"
+                        alt="Quiz image"
+                        id="quiz_img"
+                    />
+                    <a
+                        href="viewQuestion.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Преглед на предложените въпроси</a
+                    >
+                </section>
+
+                <!-- <section id="order" class="sec_size mx-auto d-inline-block">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/order_1.png"
+                        alt="Order planets image"
+                        id="order_img"
+                    />
+                    <a
+                        href="orderPlanets.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Подреди планетите</a
+                    >
+                </section>
+
+                <section id="time" class="sec_size float-right">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/time_2.png"
+                        alt="Time image"
+                        id="time_img"
+                    />
+                    <a
+                        href="calculateTime.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Пресметни времето на<br />
+                        определена планета</a
+                    >
+                </section>
+
+                <section id="crossword" class="sec_size float-left">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/cr_1.png"
+                        alt="Crossword puzzle image"
+                        id="cr_image"
+                    />
+                    <a
+                        href="crossword.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Кръстословица</a
+                    >
+                </section>
+
+                <section id="rank" class="sec_size mx-auto d-inline-block">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/ranklist_2.png"
+                        alt="Ranklist image"
+                        id="rank_img"
+                    />
+                    <a
+                        href="rankList.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Класация</a
+                    >
+                </section>
+
+                <section id="weight" class="sec_size float-right">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/weight_1.png"
+                        alt="Weight image"
+                        id="weight_image"
+                    />
+                    <a
+                        href="calculateWeight.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Пресметни теглото си на<br />
+                        определена планета</a
+                    >
+                </section> -->
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="./vendor/jquery/jquery.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendor/bootstrap/js/listGames.js"></script>
+    </body>
+</html>

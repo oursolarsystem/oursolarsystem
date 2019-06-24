@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="listGames.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        />
+        <title>Games</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="vendor/bootstrap/css/listGames.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="top-nav-bar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Начало </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pageEarth.html">Планети </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                data-toggle="dropdown"
+                                href="pageAsteroids.html"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Малки тела</a
+                            >
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="pageAsteroids.html">Астероиди</a>
+                                </li>
+                                <li class="menu-item"><a href="pageCommets.html">Комети</a></li>
+                                <li class="menu-item">
+                                    <a href="pageDwarfPlanets.html">Планети джуджета</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="pageNaturalMoon.html">Естествени спътници</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="pageArtificalMoon.html">Изкуствени спътници</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="smallBodiesGallery.html">Галерия</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="listGames.html">Забавления</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pageNews.html">Новини</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"
+                                ><span class="fas fa-sign-in-alt"></span> Вход</a
+                            >
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html"
+                                ><span class="fas fa-user"></span> Регистрация</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!----------------------PAGE CONTENT---------------------------->
+
+        <div class="premium" >
+            <button id="premium">
+                <p class="text-center">Преминаване към премиум потребител</p>
+            </button>
+        </div>
+        <!-- The Modal -->
+        <div id="myModal_1" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3>Влезте в системата, за да преминете към премиум пакет!</h3>
+                <p id="additional_information_1">
+                    Активиране със смс /само за потребители в България/. За да активираш своят
+                    ПРЕМИУМ пакет в solarsystem изпрати sms с текст FG14690 на номер 1916.
+                </p>
+                <p id="additional_information_1">
+                    ВНИМАНИЕ! При изпратен смс и не получен обратен отговор за активиран ВИП,
+                    проверете текста изпратен от вас и номера до който сте го изпратили. Не
+                    изпращайте нов смс!!! Пишете до support@solarsystem с информация за: gsm номера
+                    от който е изпратен смс-а и текста който сте изпратили. В случай, че вашият
+                    ПРЕМИУМ статус не се е активирал, затворете браузъра си или излезте от профила
+                    (с изход) и пробвайте да влезете в акаунта и играта отново. Цената на един sms е
+                    2.40 лв с вкл. ДДС за всички мобилни оператори.
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="games_button">
+                <section id="quiz" class="sec_size float-left">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/quiz_1.png"
+                        alt="Quiz image"
+                        id="quiz_img"
+                    />
+                    <a
+                        href="quiz.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Викторина</a
+                    >
+                </section>
+
+                <section id="order" class="sec_size mx-auto d-inline-block">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/order_1.png"
+                        alt="Order planets image"
+                        id="order_img"
+                    />
+                    <a
+                        href="orderPlanets.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Подреди планетите</a
+                    >
+                </section>
+
+                <section id="time" class="sec_size float-right">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/time_2.png"
+                        alt="Time image"
+                        id="time_img"
+                    />
+                    <a
+                        href="calculateTime.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Пресметни времето на<br />
+                        определена планета</a
+                    >
+                </section>
+
+                <section id="crossword" class="sec_size float-left">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/cr_1.png"
+                        alt="Crossword puzzle image"
+                        id="cr_image"
+                    />
+                    <a
+                        href="crossword.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Кръстословица</a
+                    >
+                </section>
+
+                <section id="rank" class="sec_size mx-auto d-inline-block">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/ranklist_2.png"
+                        alt="Ranklist image"
+                        id="rank_img"
+                    />
+                    <a
+                        href="rankList.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Класация</a
+                    >
+                </section>
+
+                <section id="weight" class="sec_size float-right">
+                    <img
+                        src="./vendor/bootstrap/images/gamesGallery/weight_1.png"
+                        alt="Weight image"
+                        id="weight_image"
+                    />
+                    <a
+                        href="calculateWeight.html"
+                        class="btn btn-primary btn-lg"
+                        tabindex="-1"
+                        role="button"
+                        aria-disabled="true"
+                        >Пресметни теглото си на<br />
+                        определена планета</a
+                    >
+                </section>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="./vendor/jquery/jquery.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendor/bootstrap/js/listGames.js"></script>
+    </body>
+</html>

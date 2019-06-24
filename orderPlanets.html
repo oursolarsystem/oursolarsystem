@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <link rel="stylesheet" href="orderPlanets.css" />
+
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+            integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        />
+        <title>Order Planets</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="vendor/bootstrap/css/orderPlanets.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <!-- Navigation -->
+        <nav class="top-nav-bar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Начало </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pageEarth.html">Планети </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                data-toggle="dropdown"
+                                href="pageAsteroids.html"
+                                role="button"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                >Малки тела</a
+                            >
+                            <ul class="sub-menu">
+                                <li class="menu-item">
+                                    <a href="pageAsteroids.html">Астероиди</a>
+                                </li>
+                                <li class="menu-item"><a href="pageCommets.html">Комети</a></li>
+                                <li class="menu-item">
+                                    <a href="pageDwarfPlanets.html">Планети джуджета</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="pageNaturalMoon.html">Естествени спътници</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="pageArtificalMoon.html">Изкуствени спътници</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="smallBodiesGallery.html">Галерия</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="listGames.html">Забавления</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pageNews.html">Новини</a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html"
+                                ><span class="fas fa-sign-in-alt"></span> Вход</a
+                            >
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="register.html"
+                                ><span class="fas fa-user"></span> Регистрация</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!----------------------PAGE CONTENT---------------------------->
+
+        <div class="container2">
+            <section>
+                <h1>Подреди планетите!</h1>
+                <button id="check_button">Провери</button>
+                <button id="restore_button">Изчисти</button>
+                <p id="write_here">
+                    Постави в празните полета цифрите от 1 до 8!
+                </p>
+            </section>
+
+            <section id="left_planets" class="float-left">
+                <section id="sec_jupiter">
+                    <input type="text" id="input_jupiter" />
+                    <img src="./vendor/bootstrap/images/Jupiter.png" alt="Jupiter" id="jupiter" />
+                </section>
+
+                <section id="sec_venus">
+                    <input type="text" id="input_venus" />
+                    <img src="./vendor/bootstrap/images/Venus_order.png" alt="Venus" id="venus" />
+                </section>
+
+                <section id="sec_earth">
+                    <input type="text" id="input_earth" />
+                    <img src="./vendor/bootstrap/images/Earth_order.png" alt="Earth" id="earth" />
+                </section>
+
+                <section id="sec_saturn">
+                    <input type="text" id="input_saturn" />
+                    <img
+                        src="./vendor/bootstrap/images/Saturn_order.png"
+                        alt="Saturn"
+                        id="saturn"
+                    />
+                </section>
+            </section>
+
+            <section id="right_planets" class="float-right">
+                <section id="sec_mars">
+                    <img src="./vendor/bootstrap/images/Mars.png" alt="Mars" id="mars" />
+                    <input type="text" id="input_mars" />
+                </section>
+
+                <section id="sec_neptune">
+                    <img
+                        src="./vendor/bootstrap/images/Neptune_order.png"
+                        alt="Neptune"
+                        id="neptune"
+                    />
+                    <input type="text" id="input_neptune" />
+                </section>
+
+                <section id="sec_mercury">
+                    <img
+                        src="./vendor/bootstrap/images/Mercury_order.png"
+                        alt="Mercury"
+                        id="mercury"
+                    />
+                    <input type="text" id="input_mercury" />
+                </section>
+            </section>
+
+            <section id="sec_uranus">
+                <img src="./vendor/bootstrap/images/Uranus_order.png" alt="Uranus" id="uranus" />
+                <input type="text" id="input_uranus" />
+            </section>
+        </div>
+        <!-- Bootstrap core JavaScript -->
+        <script src="./vendor/jquery/jquery.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="./vendor/bootstrap/js/orderPlanets.js"></script>
+    </body>
+</html>
